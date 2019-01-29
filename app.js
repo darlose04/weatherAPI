@@ -11,10 +11,14 @@ const ui = new UI();
 document.addEventListener('DOMContentLoaded', getWeather);
 
 // change location event
-document.getElementById('w-change-btn'),addEventListener('click', (e) => {
+document.getElementById('w-change-btn').addEventListener('click', (e) => {
   const zip = document.getElementById('zip').value;
 
-  weather.changeLocation();
+  // change location
+  weather.changeLocation(zip);
+
+  // set location in local storage
+  storage.setLocationData(zip);
 
   // Get and display weather
   getWeather();
