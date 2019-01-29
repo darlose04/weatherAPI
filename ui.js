@@ -21,7 +21,7 @@ class UI {
     this.humidity.textContent = `Relative Humidity: ${weather.main.humidity}%`;
     this.maxTemp.textContent = `High: ${weather.main.temp_max} °F`;
     this.minTemp.textContent = `Low: ${weather.main.temp_min} °F`;
-    this.pressure.textContent = `Pressure: ${weather.main.pressure} in`;
+    this.pressure.textContent = `Pressure: ${weather.main.pressure} inHg`;
     this.windSpeed.textContent = `Wind Speed: ${weather.wind.speed} mph`;
     this.windDeg.textContent = `Wind Direction: ${weather.wind.deg}°`;
   }
